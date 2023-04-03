@@ -22,5 +22,8 @@ router.get('/tweets/followed', authenticateUser, tweetController.getTweetsByFoll
 router.get('/tweets/search', tweetController.searchTweets);
 router.get('/tweets/page', tweetController.getTweetsWithPagination);
 
+router.get('/',(req,res)=>{
+ return res.send('Welcome To This Project !!')           
+})
 
 module.exports = router;
